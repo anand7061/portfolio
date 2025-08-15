@@ -249,44 +249,36 @@
     <span class="text-white font-semibold text-lg">instagram</span>
 </a>
 <script>
-    // Wait for the document to be fully loaded before running the script
-    document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.getElementById('main-header');
+            
+            // These are the classes that define the header's background style
+            const backgroundClasses = [
+                'bg-gray-900', 
+                'bg-opacity-80', 
+                'backdrop-filter', 
+                'backdrop-blur-sm', 
+                'shadow-lg'
+            ];
 
-        // Select the header element using its ID
-        const header = document.getElementById('main-header');
+            const handleScroll = () => {
+                // Check if the user has scrolled more than 10 pixels down
+                if (window.scrollY > 10) {
+                    // If scrolled down, REMOVE the classes to make the header transparent
+                    header.classList.remove(...backgroundClasses);
+                } else {
+                    // If at the top, ADD the classes back to make the header visible
+                    header.classList.add(...backgroundClasses);
+                }
+            };
 
-        // Define the classes to add when the page is scrolled
-        const scrolledClasses = [
-            'bg-gray-900', 
-            'bg-opacity-80', 
-            'backdrop-filter', 
-            'backdrop-blur-sm', 
-            'shadow-lg'
-        ];
-
-        // Function to handle the scroll event
-        const handleScroll = () => {
-            // Check if the user has scrolled more than 10 pixels from the top
-            if (window.scrollY > 10) {
-                // If scrolled, add all the classes from the array
-                header.classList.add(...scrolledClasses);
-            } else {
-                // If at the top, remove all the classes from the array
-                header.classList.remove(...scrolledClasses);
-            }
-        };
-
-        // Add the scroll event listener to the window
-        window.addEventListener('scroll', handleScroll);
-
-        // Optional: Run the function once on load to set the initial state correctly
-        // (in case the page is reloaded in a scrolled position)
-        handleScroll();
-    });
-</script>
+            window.addEventListener('scroll', handleScroll);
+        });
+    </script>
 </body>
 
         
+
 
 
 
