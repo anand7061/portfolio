@@ -1,1 +1,313 @@
+ <!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand Kumar | Data Analyst Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for a futuristic look -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0b1120;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: linear-gradient(45deg, #1f2937, #0b1120, #1f2937);
+            background-size: 400% 400%;
+            animation: gradient-animation 15s ease infinite;
+        }
+
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .glass-card {
+            background-color: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+        }
+
+        /* Responsive styling for navigation on smaller screens */
+        @media (max-width: 768px) {
+            .nav-link {
+                display: block;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <div class="animated-bg"></div>
+
+    <!-- Header & Navigation -->
+<!--     <header class="fixed top-0 left-0 w-full z-20 bg-gray-900 bg-opacity-80 backdrop-filter backdrop-blur-sm shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row justify-center md:justify-between items-center space-y-4 md:space-y-0">
+            <a href="#" class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-sky-500 font-['Orbitron'] tracking-wider">
+                ANAND KUMAR
+            </a>
+            <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-lg font-medium">
+                <a href="#about" class="text-gray-300 hover:text-sky-400 transition-colors duration-300 nav-link">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-sky-400 transition-colors duration-300 nav-link">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:text-sky-400 transition-colors duration-300 nav-link">Projects</a>
+                <a href="#achievements" class="text-gray-300 hover:text-sky-400 transition-colors duration-300 nav-link">Achievements</a>
+                <a href="#contact" class="text-gray-300 hover:text-sky-400 transition-colors duration-300 nav-link">Contact</a>
+            </div>
+        </nav>
+    </header> -->
+
+  <header id="main-header" class="fixed top-0 left-0 w-full z-20 transition-all duration-300">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row justify-center md:justify-between items-center space-y-4 md:space-y-0">
+        <a href="#" class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-sky-500 font-['Orbitron'] tracking-wider">
+            ANAND KUMAR
+        </a>
+        <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-lg font-medium">
+            <a href="#about" class="text-gray-300 hover:text-sky-400 transition-colors duration-300 nav-link">About</a>
+            <a href="#skills" class="text-gray-300 hover:text-sky-400 transition-colors duration-300 nav-link">Skills</a>
+            <a href="#projects" class="text-gray-300 hover:text-sky-400 transition-colors duration-300 nav-link">Projects</a>
+            <a href="#achievements" class="text-gray-300 hover:text-sky-400 transition-colors duration-300 nav-link">Achievements</a>
+            <a href="#contact" class="text-gray-300 hover:text-sky-400 transition-colors duration-300 nav-link">Contact</a>
+        </div>
+    </nav>
+</header>
+
+    <main class="pt-24 pb-12">
+        <!-- Hero Section -->
+        <section id="about" class="container mx-auto px-4 py-20 flex flex-col items-center text-center">
+            <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-sky-400 shadow-2xl shadow-sky-400 transition-transform duration-500 hover:scale-105 mb-8">
+<!--                 <img src="https://github.com/anand7061/portfolio/blob/main/(Upload-from-mobile-1754769322)IMG-20241101-WA0017.jpg" alt="Anand Kumar Profile" class="object-cover w-full h-half"> -->
+                <img src="https://www.dakshana.org/wp-content/uploads/2022/09/12031016512.jpg" alt="Anand Kumar Profile" class="object-cover w-full h-full">
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white font-['Orbitron'] leading-tight mb-4 tracking-wide">
+                Hello, I'm Anand Kumar
+            </h1>
+            <h2 class="text-xl md:text-3xl text-sky-400 font-bold mb-6 tracking-wide">
+                Building with Purpose, Learning with Passion
+            </h2>
+            <p class="text-lg text-gray-400 max-w-3xl mb-8">
+                B.Tech Final Year, Civil Engineering student at IIT Guwahati | Skilled in Python, SQL, JavaScript, and Power BI, NumPy, Pandas, seaborn and Matplotlib with a strong interest in using data to uncover insights and drive meaningful outcomes. Experienced in public relations, media, and event management through roles in Alcheringa, Kirei, and Spirit 2024, along with contributions to the Social Service Club, Finesse Club research team, and Athletics Club.
+            </p>
+            <a href="https://drive.google.com/file/d/1-_6pFg5W4DvoZhzp6Zm6aBl7-8T-Ni56/view?usp=sharing" target="_blank" class="px-8 py-3 bg-gradient-to-r from-sky-500 to-blue-400 text-black font-bold rounded-full shadow-lg hover:shadow-xl hover:from-sky-400 hover:to-blue-300 transition-all duration-300 transform hover:scale-105">
+                View CV
+            </a>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="container mx-auto px-4 py-16">
+            <h3 class="text-3xl md:text-4xl font-bold text-center text-sky-400 mb-12 font-['Orbitron']">
+                Skills
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 rounded-xl glass-card transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold text-white mb-2">Programming</h4>
+                    <p class="text-gray-400">C/C++, Python, JavaScript</p>
+                </div>
+                <div class="p-6 rounded-xl glass-card transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold text-white mb-2">Data Analysis & Visualization</h4>
+                    <p class="text-gray-400">Power BI, Python (Pandas, NumPy, Matplotlib, Seaborn)</p>
+                </div>
+                <div class="p-6 rounded-xl glass-card transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold text-white mb-2">Web Technologies</h4>
+                    <p class="text-gray-400">HTML, CSS, Bootstrap, Node.js</p>
+                </div>
+                <div class="p-6 rounded-xl glass-card transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold text-white mb-2">Database Management</h4>
+                    <p class="text-gray-400">MySQL, MongoDB</p>
+                </div>
+                <div class="p-6 rounded-xl glass-card transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold text-white mb-2">Operating Systems</h4>
+                    <p class="text-gray-400">Windows, Linux</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container mx-auto px-4 py-16">
+            <h3 class="text-3xl md:text-4xl font-bold text-center text-sky-400 mb-12 font-['Orbitron']">
+                Projects
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 rounded-xl glass-card transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold text-white mb-2">Spotify Clone</h4>
+                    <p class="text-gray-400">Music player using HTML, CSS, JS</p>
+                    <a href="https://anand7061.github.io/Spotify-Web-Application/" target="_blank" class="mt-4 inline-block text-sky-400 hover:text-white transition-colors duration-300">
+                       🔗 View Live Demo &rarr;
+                    </a>
+                </div>
+                <div class="p-6 rounded-xl glass-card transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold text-white mb-2">Weather Forecast</h4>
+                    <p class="text-gray-400">Real-time app with API integration</p>
+                    <a href="https://anand7061.github.io/weather-forecast/" target="_blank" class="mt-4 inline-block text-sky-400 hover:text-white transition-colors duration-300">
+                       🔗 View Live Demo &rarr;
+                    </a>
+                </div>
+                <div class="p-6 rounded-xl glass-card transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold text-white mb-2">Online Sales Data Analysis</h4>
+                    <p class="text-gray-400">Sales Dashboard and Analysis using Power BI</p>
+                    <a href="https://github.com/anand7061/eCommerce-sales-data.git" target="_blank" class="mt-4 inline-block text-sky-400 hover:text-white transition-colors duration-300">
+                        View Repository &rarr;
+                    </a>
+                </div>
+                <div class="p-6 rounded-xl glass-card transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold text-white mb-2">Airline Flights Dataset Analysis</h4>
+                    <p class="text-gray-400">EDA and visualizations of Indian flight data</p>
+                    <a href="https://github.com/anand7061/Airline-Flights-Dataset-Analysis---India.git" target="_blank" class="mt-4 inline-block text-sky-400 hover:text-white transition-colors duration-300">
+                        View Repository &rarr;
+                    </a>
+                </div>
+                <div class="p-6 rounded-xl glass-card transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold text-white mb-2">JOSSA PORTAL – IIT Admission Predictor</h4>
+                    <p class="text-gray-400">A MERN-stack JoSAA clone that automates college seat allocation with a custom ranking algorithm.</p>
+                    <a href="https://github.com/anand7061/JoSSA-portal-web-clone.git" target="_blank" class="mt-4 inline-block text-sky-400 hover:text-white transition-colors duration-300">
+                        View Repository &rarr;
+                    </a>
+                </div>
+                <div class="p-6 rounded-xl glass-card transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold text-white mb-2">Movie Recommendation System</h4>
+                    <p class="text-gray-400">Tech Stack: Python, Pandas, Scikit-learn, Surprise, Django.</p>
+                    <a href="https://anand7061-movie-recommendation-system-app-turxkt.streamlit.app/" target="_blank" class="mt-4 inline-block text-sky-400 hover:text-white transition-colors duration-300">
+                       🔗 View Live Demo &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="container mx-auto px-4 py-16">
+            <h3 class="text-3xl md:text-4xl font-bold text-center text-sky-400 mb-12 font-['Orbitron']">
+                Achievements
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 rounded-xl glass-card transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold text-white mb-2">FFE Scholar</h4>
+                    <p class="text-gray-400">Foundation for Excellence (2022–Present)</p>
+                </div>
+                <div class="p-6 rounded-xl glass-card transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold text-white mb-2">JEE Advanced</h4>
+                    <p class="text-gray-400">Category Rank 1523</p>
+                </div>
+                <div class="p-6 rounded-xl glass-card transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold text-white mb-2">JNV</h4>
+                    <p class="text-gray-400">JNVST 2014 Selection</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container mx-auto px-4 py-16">
+            <h3 class="text-3xl md:text-4xl font-bold text-center text-sky-400 mb-12 font-['Orbitron']">
+                Contact Me
+            </h3>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-8">
+                <a href="https://www.linkedin.com/in/anand-kumar-724472255" target="_blank" class="p-6 rounded-xl glass-card flex flex-col items-center justify-center space-y-2 transform hover:scale-105 transition-transform duration-300 group">
+                    <svg class="w-12 h-12 fill-sky-400 group-hover:fill-white transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.7 0 32-14.5 32-32.3V64.3c0-17.8-14.3-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V290.5c0-14.6-.6-28.9-15.4-28.9-15.7 0-21.7 11.5-21.7 29v124.7h-66.3V202.2h66.3v28.5c9.2-13.3 23.9-24.5 53.3-24.5 36.7 0 69.1 20.3 69.1 63V416z"/>
+                    </svg>
+                    <span class="text-white font-semibold text-lg">LinkedIn</span>
+                </a>
+                <a href="https://github.com/anand7061" target="_blank" class="p-6 rounded-xl glass-card flex flex-col items-center justify-center space-y-2 transform hover:scale-105 transition-transform duration-300 group">
+                    <svg class="w-12 h-12 fill-sky-400 group-hover:fill-white transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-249.4 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 235.2-57.4 243.7-112.3 249.4 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 63V416z"/>
+                    </svg>
+                    <span class="text-white font-semibold text-lg">github</span>
+                </a>
+                <a href="mailto:anandkumarchatra969.email@example.com" target="_blank" class="p-6 rounded-xl glass-card flex flex-col items-center justify-center space-y-2 transform hover:scale-105 transition-transform duration-300 group">
+    <!-- SVG icon for a Gmail envelope -->
+    <svg class="w-12 h-12 fill-sky-400 group-hover:fill-white transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+        <path d="M576 112v288c0 26.5-21.5 48-48 48H112c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h416c26.5 0 48 21.5 48 48zm-448 32v192l176 104 176-104V144L320 288 128 144zM544 96c-17.7 0-32 14.3-32 32v32L320 288 128 160V128c0-17.7-14.3-32-32-32H96c-17.7 0-32 14.3-32 32v320c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32v-32L320 352l176 104v32c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32z"/>
+    </svg>
+    <span class="text-white font-semibold text-lg">gmail</span>
+</a>
+
+
+<a href="https://www.instagram.com/anand33875" target="_blank" class="p-6 rounded-xl glass-card flex flex-col items-center justify-center space-y-2 transform hover:scale-105 transition-transform duration-300 group">
+    <!-- SVG icon for Instagram -->
+    <svg class="w-12 h-12 fill-sky-400 group-hover:fill-white transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M128 0C100.9 0 78 22.9 78 50.9v410.2C78 489.1 100.9 512 128 512h256c27.1 0 49-22.9 49-50.9V50.9C433 22.9 411.1 0 384 0H128zm-32 50.9c0-17.6 14.4-32 32-32h256c17.6 0 32 14.4 32 32v410.2c0 17.6-14.4 32-32 32H128c-17.6 0-32-14.4-32-32V50.9zM256 128c-70.7 0-128 57.3-128 128s57.3 128 128 128 128-57.3 128-128-57.3-128-128-128zm0 212c-46.3 0-84-37.7-84-84s37.7-84 84-84 84 37.7 84 84-37.7 84-84 84zm128-156c-17.6 0-32-14.4-32-32s14.4-32 32-32 32 14.4 32 32-14.4 32-32 32z"/>
+    </svg>
+    <span class="text-white font-semibold text-lg">instagram</span>
+</a>
+<script>
+    // Wait for the document to be fully loaded before running the script
+    document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.getElementById('main-header');
+            
+            // These are the classes that define the header's background style
+            const backgroundClasses = [
+                'bg-gray-900', 
+                'bg-opacity-80', 
+                'backdrop-filter', 
+                'backdrop-blur-sm', 
+                'shadow-lg'
+            ];
+
+        // Select the header element using its ID
+        const header = document.getElementById('main-header');
+            const handleScroll = () => {
+                // Check if the user has scrolled more than 10 pixels down
+                if (window.scrollY > 10) {
+                    // If scrolled down, REMOVE the classes to make the header transparent
+                    header.classList.remove(...backgroundClasses);
+                } else {
+                    // If at the top, ADD the classes back to make the header visible
+                    header.classList.add(...backgroundClasses);
+                }
+            };
+
+        // Define the classes to add when the page is scrolled
+        const scrolledClasses = [
+            'bg-gray-900', 
+            'bg-opacity-80', 
+            'backdrop-filter', 
+            'backdrop-blur-sm', 
+            'shadow-lg'
+        ];
+
+        // Function to handle the scroll event
+        const handleScroll = () => {
+            // Check if the user has scrolled more than 10 pixels from the top
+            if (window.scrollY > 10) {
+                // If scrolled, add all the classes from the array
+                header.classList.add(...scrolledClasses);
+            } else {
+                // If at the top, remove all the classes from the array
+                header.classList.remove(...scrolledClasses);
+            }
+        };
+
+        // Add the scroll event listener to the window
+        window.addEventListener('scroll', handleScroll);
+
+        // Optional: Run the function once on load to set the initial state correctly
+        // (in case the page is reloaded in a scrolled position)
+        handleScroll();
+    });
+</script>
+            window.addEventListener('scroll', handleScroll);
+        });
+    </script>
+</body>
+
 
